@@ -1,4 +1,4 @@
-# Lab 08: Knowledge check
+ # Lab 08: Knowledge check
 
 **Answer each question below it, in your own words, in one to three sentences.** Replace the `...` below **Your answer:** with your text. Questions 1 and 3 also ask for saved output, which goes into the directory `results/`.
 
@@ -12,7 +12,10 @@ Redirect the command's output to `results/job-history.txt` and include the file 
 
 **Your answer:** Provide the entire command you used, including all CLI options.
 
-...
+sacct -S 2026-11-04 -X --format=JobID,JobName,NodeList,Partition,Account,User,State,Start,Elapsed > results/job-history.txt
+
+
+
 
 ## 2. Slurm: did every array task run at the same time?
 
@@ -24,7 +27,8 @@ You submitted your entire job array with one `sbatch` command, but Slurm schedul
 
 **Your answer:** Did all tasks in the array start at the same time? Was the elapsed time identical for every task? Explain why or why not.
 
-...
+Not all 101 of the tasks started at the same time. For example, the first task started at 18:38:54, while the last task started at 19:02:03. This shows that slurm started/scheduled the tasks in batches. Additionally, this means that some tasks started together while other had to wait for resources to become available. The elapsed times also varied, ranging from 14 to 19 seconds.  
+
 
 ## 3. Slurm: did my job use what it asked for?
 
@@ -36,5 +40,5 @@ Suppose your next job array has 1,000 books instead of 101. Before you submit it
 
 **Your answer:** How much memory and time did the task use, compared with what your script asked for? What would you change in your script, and why?
 
-...
+The task used less memory and CPU than allocated. It only used about 27.78% of its available CPU time(10/36 available core seconds) and 9.23% of its allocated memory (1.48 GB/16 GB). The runtime was also just 18 seconds, compared to the requested 5 minutes. In the future, I would reduce the maximum amount of memory and time limit to help avoid wasting resources.  
 

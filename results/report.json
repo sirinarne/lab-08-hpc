@@ -1,0 +1,57 @@
+{
+  "documents": 101,
+  "summarized": 101,
+  "runs_by_job": [
+    {
+      "_id": "22644760",
+      "books": 1
+    },
+    {
+      "_id": "22647288",
+      "books": 101
+    }
+  ],
+  "genres": [
+    {
+      "_id": "unknown",
+      "books": 98
+    },
+    {
+      "_id": "historical fiction",
+      "books": 2
+    },
+    {
+      "_id": "mystery",
+      "books": 1
+    }
+  ],
+  "last_summarized": [
+    {
+      "_id": "pg996.txt",
+      "author": "Miguel de Cervantes Saavedra",
+      "title": "Don Quixote",
+      "llm_analysis": {
+        "summary": "**Summary:**\n- **Setting:** Set in Spain, particularly around the 16th century.\n- **Main Characters:** Don Quixote, a mad knight, and Sancho Panza, his loyal squire.\n- **Plot Summary:** Don Quixote, inspired by medieval chivalry stories, decides to ride off as a knight and falls in love with Dulcinea, a woman he believes to be a princess. However, he encounters numerous comedic and tragic misadventures, including battles with windmills, enchanted objects, and misunderstandings.\n\n**",
+        "genre": "unknown"
+      }
+    },
+    {
+      "_id": "pg963.txt",
+      "author": "Charles Dickens",
+      "title": "Little Dorrit",
+      "llm_analysis": {
+        "summary": "**Summary:**  \nMr Arthur Clennam arrives in London from Marseilles, where he witnessed a tragic event involving a ship sinking. He meets his estranged mother, Mrs Clennam, who is confined to her room due to health issues. During their reunion, Mr Clennam learns about his father's death and the financial troubles of the family. Mrs Clennam reveals that her husband, Jeremiah Flintwinch, proposes marriage to her despite their shared past.\n\n**",
+        "genre": "unknown"
+      }
+    },
+    {
+      "_id": "pg95.txt",
+      "author": "Anthony Hope",
+      "title": "The prisoner of Zenda",
+      "llm_analysis": {
+        "summary": "**Summary:** Rudolf Rassendyll, pretending to be King Rudolf the Fifth of Ruritania, embarks on a dangerous mission to retrieve the King from Duke Michael's custody. Along the way, he encounters various challenges and allies, including a mysterious woman named Antoinette de Mauban.\n\n**",
+        "genre": "unknown"
+      }
+    }
+  ]
+}
